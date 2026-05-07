@@ -11,3 +11,4 @@ env/
 venv/
 ENV/
 .streamlit/
+.DS_Store
