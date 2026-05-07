@@ -16,7 +16,7 @@ A high-performance machine learning system designed to detect fraudulent transac
 
 ## 📁 Project Structure
 - `app.py`: The main interactive Streamlit dashboard for real-time security scans.
-- `original analysis.ipynb`: **[FULL PROJECT CODE]** Comprehensive end-to-end analysis, including data acquisition, preprocessing, cross-validation, and model building.
+- `original analysis.ipynb`: **[FULL END-TO-END CODE]** This notebook contains the complete project logic, including data acquisition, preprocessing, cross-validation, model building, and final evaluation.
 - `final_project.ipynb`: Supporting research and exploratory data analysis.
 - `Project_Report.md`: Technical documentation and deep-dive into model findings.
 - `model_data.pkl`: Serialized Random Forest model and Scaler for production use.
