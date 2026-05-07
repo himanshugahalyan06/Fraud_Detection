@@ -1,31 +1,43 @@
 # 🛡️ FraudGuard AI: Financial Intelligence Dashboard
 
-A high-performance machine learning system designed to detect fraudulent transactions in real-time. Built with a **Balanced Decision Tree** model, this project achieves **99.9% accuracy** on a dataset of 6.36 million financial records.
+A high-performance machine learning system designed to detect fraudulent transactions in real-time. This project leverages advanced tree-based algorithms to achieve **99.9% accuracy** on a dataset of 6.36 million financial records, specifically optimized to handle extreme class imbalance.
 
 ## 🚀 Key Features
-- **Premium UI:** Midnight Dark Glassmorphism theme with modern typography.
-- **Real-time Detection:** Instant classification of transactions as `SAFE` or `FRAUD`.
-- **Parameter Analysis:** Detailed reasoning for every prediction (e.g., account drain detection).
-- **No Bias:** Trained with balanced class weights to handle extreme data skew.
+- **Premium UI:** Midnight Dark Glassmorphism theme with modern typography and real-time security signals.
+- **Advanced Model Suite:** Comparative analysis across Logistic Regression, LDA, Decision Trees, and Random Forests.
+- **Bias Mitigation:** Implements stratified sampling and focuses on **Recall** to minimize false-negative rates in fraud detection.
+- **Persistence:** Models are serialized using `pickle` for instant deployment in the live dashboard.
 
 ## 🛠️ Tech Stack
-- **Engine:** Python, Scikit-learn, Pandas, NumPy
+- **Languages:** Python (3.8+)
+- **Machine Learning:** Scikit-learn, Pandas, NumPy
+- **Visualization:** Matplotlib, Seaborn
 - **Dashboard:** Streamlit
-- **Model:** DecisionTreeClassifier (Balanced)
 
 ## 📁 Project Structure
-- `app.py`: The main Streamlit dashboard.
-- `final_project.ipynb`: Exploratory Data Analysis & Model Training logic.
-- `Project_Report.md`: Technical documentation and correlation analysis.
-- `model_data.pkl`: Serialized model and scaler.
+- `app.py`: The main interactive Streamlit dashboard for real-time security scans.
+- `original analysis.ipynb`: Comprehensive end-to-end analysis, including data acquisition, preprocessing, model building, and comparison.
+- `final_project.ipynb`: Supporting research and exploratory data analysis.
+- `Project_Report.md`: Technical documentation and deep-dive into model findings.
+- `model_data.pkl`: Serialized Random Forest model and Scaler for production use.
 
 ## ⚙️ Installation & Usage
-1. Clone the repository.
-2. Install dependencies:
+
+1. **Clone the repository:**
    ```bash
-   pip install streamlit pandas scikit-learn numpy
+   git clone <your-repo-url>
+   cd Fraud_Detection
    ```
-3. Run the application:
+
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run the Analysis:**
+   Open `original analysis.ipynb` in Jupyter and run all cells to view model comparisons and generate the latest model file.
+
+4. **Launch the Dashboard:**
    ```bash
    streamlit run app.py
    ```
